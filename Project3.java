@@ -1,4 +1,4 @@
-import javax.swing.*;
+aimport javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -23,7 +23,7 @@ public class Project3 {
             menuframe.setTitle("Library");
 
             //setting the icon
-            ImageIcon imageicon = new ImageIcon(PROJECT2.class.getResource("Bookshelf.png"));
+            ImageIcon imageicon = new ImageIcon(Project3.class.getResource("Bookshelf.png"));
             menuframe.setIconImage(imageicon.getImage());
 
             //Heading
