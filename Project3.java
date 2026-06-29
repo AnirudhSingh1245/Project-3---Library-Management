@@ -1,8 +1,8 @@
-aimport javax.swing.*;
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.*;
+import java.sql.*;                                          //Library Management System using Java and MySQL
 public class Project3 {
     public static void main(String arg[]){
         try{
