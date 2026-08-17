@@ -1,46 +1,33 @@
-# 📚 Library Book Issue Management System
+📚 Library Book Issue Management System
 
-A desktop-based library management application built with **Java Swing, JDBC, and MySQL** for managing book issue records through a simple graphical interface.
+A desktop-based library management application built with Java Swing, JDBC, and MySQL for managing book issue records through a simple graphical interface.
 
 <p align="center">
 
-**Java Swing** • **MySQL** • **JDBC** • **CRUD Operations** • **Desktop Application**
+Java Swing • MySQL • JDBC • CRUD Operations • Desktop Application
 
 </p>
-
----
-
-## ✨ Overview
+✨ Overview
 
 Library Book Issue Management System is a Java desktop application designed to manage library book-issue records using a graphical interface and MySQL database.
 
 This project demonstrates:
 
-- 🖥️ Java Swing GUI development
-- 🗄️ MySQL database management
-- 🔌 JDBC connectivity
-- 🧩 CRUD operations
-- ⚡ Event-driven programming
-- 🧠 SQL queries with Java
-
----
-
-## 🛠️ Tech Stack
-
-| Technology | Purpose |
-|------------|---------|
-| ☕ Java | Application logic |
-| 🎨 Java Swing | Graphical interface |
-| 🔌 JDBC | Java-MySQL connectivity |
-| 🗄️ MySQL | Data storage |
-| 📝 SQL | Database operations |
-| 🐙 Git & GitHub | Version control |
-
----
-
-## 🏗️ Architecture
-
-```text
+🖥️ Java Swing GUI development
+🗄️ MySQL database management
+🔌 JDBC connectivity
+🧩 CRUD operations
+⚡ Event-driven programming
+🧠 SQL queries with Java
+🛠️ Tech Stack
+Technology	Purpose
+☕ Java	Application logic
+🎨 Java Swing	Graphical interface
+🔌 JDBC	Java-MySQL connectivity
+🗄️ MySQL	Data storage
+📝 SQL	Database operations
+🐙 Git & GitHub	Version control
+🏗️ Architecture
 ┌─────────────────────────────┐
 │        Java Swing GUI       │
 │                             │
@@ -60,6 +47,7 @@ This project demonstrates:
 └─────────────────────────────┘
 
 🗄️ Database
+
 The project includes a ready-to-import SQL file:
 
 database/
@@ -87,41 +75,57 @@ Project-3---Library-Management/
 ⚙️ Installation & Setup
 1️⃣ Clone the Repository
 git clone https://github.com/AnirudhSingh1245/Project-3---Library-Management.git
-
 cd Project-3---Library-Management
 
 2️⃣ Requirements
+
 Make sure you have:
 
 ☕ Java JDK
 🗄️ MySQL Server
 🔌 MySQL Connector/J
-You can use IntelliJ IDEA, Eclipse, NetBeans, or VS Code.
 
+You can use:
+
+IntelliJ IDEA
+Eclipse
+NetBeans
+VS Code
 3️⃣ Setup Database
+
 Create the database:
 
 CREATE DATABASE Library;
 
 USE Library;
 
+
 Then import:
 
 database/library.sql
 
 4️⃣ Configure MySQL
-Update the MySQL username and password in Project3.java.
+
+Update your MySQL username and password in Project3.java.
 
 ⚠️ Do not upload real database passwords to GitHub.
 
-5️⃣ Run
+5️⃣ Run the Application
+
+Compile:
+
 javac Project3.java
 
+
+Run:
+
 java Project3
+
 
 Or run Project3.java directly from your IDE.
 
 🧪 Sample Data
+
 The SQL file includes sample library records:
 
 ID    Name      Book
@@ -134,6 +138,7 @@ ID    Name      Book
 9     anni      Harry Potter
 
 🔐 Security Notes
+
 For a production-ready version, consider:
 
 🔒 Moving database credentials outside the source code
@@ -150,6 +155,9 @@ For a production-ready version, consider:
 🔐 Login system
 📊 Library statistics
 🧠 What This Project Demonstrates
+
+The basic flow of the application is:
+
 User Input
     ↓
 Java Swing
@@ -164,9 +172,11 @@ MySQL
     ↓
 Result
 
+
 Java → Swing → JDBC → SQL → MySQL
 
 👨‍💻 Author
+
 Anirudh Singh
 
 GitHub: @AnirudhSingh1245
