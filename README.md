@@ -1,66 +1,69 @@
-📚 Library Book Issue Management System
+# 📚 Library Book Issue Management System
 
-A desktop-based library management application built with Java Swing, JDBC, and MySQL for managing book issue records through a simple graphical interface.
+A desktop-based library management application built with **Java Swing, JDBC, and MySQL** for managing book issue records through a simple graphical interface.
 
 <p align="center">
 
-Java Swing • MySQL • JDBC • CRUD Operations • Desktop Application
+**Java Swing** • **MySQL** • **JDBC** • **CRUD Operations** • **Desktop Application**
 
 </p>
-✨ Overview
 
-Library Book Issue Management System is a Java desktop application designed to simplify the management of library book-issue records.
+---
 
-The application provides a graphical interface through which library data can be managed and stored in a MySQL database.
+## ✨ Overview
 
-This project was created to practice and demonstrate:
+Library Book Issue Management System is a Java desktop application designed to manage library book-issue records using a graphical interface and MySQL database.
 
-🖥️ Java Swing GUI development
-🗄️ MySQL database management
-🔌 JDBC database connectivity
-🧩 CRUD operations
-⚡ Event-driven programming
-🧠 SQL query execution from Java
-📁 Database-backed desktop applications
-🛠️ Tech Stack
-Technology	Purpose
-☕ Java	Application logic
-🎨 Java Swing	Graphical user interface
-🔌 JDBC	Java ↔ MySQL connectivity
-🗄️ MySQL	Persistent data storage
-📝 SQL	Database operations
-🐙 Git & GitHub	Version control
-🏗️ Application Architecture
+This project demonstrates:
+
+- 🖥️ Java Swing GUI development
+- 🗄️ MySQL database management
+- 🔌 JDBC connectivity
+- 🧩 CRUD operations
+- ⚡ Event-driven programming
+- 🧠 SQL queries with Java
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| ☕ Java | Application logic |
+| 🎨 Java Swing | Graphical interface |
+| 🔌 JDBC | Java-MySQL connectivity |
+| 🗄️ MySQL | Data storage |
+| 📝 SQL | Database operations |
+| 🐙 Git & GitHub | Version control |
+
+---
+
+## 🏗️ Architecture
+
+```text
 ┌─────────────────────────────┐
-│       Java Swing GUI        │
+│        Java Swing GUI       │
 │                             │
 │  Insert │ Update │ Delete   │
 │              │ Search       │
 └──────────────┬──────────────┘
                │
-               │ JDBC
+              JDBC
+               │
                ▼
 ┌─────────────────────────────┐
 │           MySQL             │
 │                             │
 │       Library Database      │
 │                             │
-│          ┌───────┐          │
-│          │  lib  │          │
-│          └───────┘          │
+│            lib              │
 └─────────────────────────────┘
 
 🗄️ Database
-
-The project includes a ready-to-import SQL dump:
+The project includes a ready-to-import SQL file:
 
 database/
 └── library.sql
-
-
-The database contains a table named:
-
-lib
 
 lib Table
 Column	Type
@@ -70,76 +73,59 @@ book	VARCHAR(50)
 Date_of_issue	DATE
 Date_of_returning	DATE
 
-id is used as the primary key for each library issue record.
-
-The SQL dump also contains sample records for testing.
+The id column is used as the primary key.
 
 📂 Project Structure
 Project-3---Library-Management/
 │
 ├── 📄 Project3.java
-│   └── Main Java Swing application
-│
 ├── 📁 database/
-│   └── library.sql
-│       └── MySQL database schema + sample data
-│
+│   └── 📄 library.sql
 ├── 📄 .gitignore
-│
 └── 📄 README.md
 
 ⚙️ Installation & Setup
 1️⃣ Clone the Repository
 git clone https://github.com/AnirudhSingh1245/Project-3---Library-Management.git
+
 cd Project-3---Library-Management
 
-2️⃣ Install Requirements
-
+2️⃣ Requirements
 Make sure you have:
 
 ☕ Java JDK
 🗄️ MySQL Server
-🔌 MySQL JDBC Driver
-
+🔌 MySQL Connector/J
 You can use IntelliJ IDEA, Eclipse, NetBeans, or VS Code.
 
-3️⃣ Create the Database
-CREATE DATABASE Library;
-USE Library;
+3️⃣ Setup Database
+Create the database:
 
+CREATE DATABASE Library;
+
+USE Library;
 
 Then import:
 
 database/library.sql
 
-4️⃣ Configure MySQL Connection
+4️⃣ Configure MySQL
+Update the MySQL username and password in Project3.java.
 
-The application connects to:
+⚠️ Do not upload real database passwords to GitHub.
 
-jdbc:mysql://localhost:3306/
-
-
-and uses the Library database.
-
-⚠️ Important: Keep your MySQL username and password private. Avoid committing real credentials to GitHub.
-
-5️⃣ Add MySQL JDBC Driver
-
-Make sure MySQL Connector/J is available on the project's classpath.
-
-▶️ Run the Application
+5️⃣ Run
 javac Project3.java
-java Project3
 
+java Project3
 
 Or run Project3.java directly from your IDE.
 
-🧪 Example Data
-
-The included SQL dump contains sample records such as:
+🧪 Sample Data
+The SQL file includes sample library records:
 
 ID    Name      Book
-────────────────────────────────────────
+────────────────────────────────────
 1     anni      Oliver Twist
 2     anil      Around the World in 80 Days
 3     anirudh   Tom Sawyer
@@ -148,41 +134,25 @@ ID    Name      Book
 9     anni      Harry Potter
 
 🔐 Security Notes
-
-This project is intended primarily as a learning/academic project.
-
-For a production-ready application, consider:
+For a production-ready version, consider:
 
 🔒 Moving database credentials outside the source code
 🛡️ Using PreparedStatement
 ✅ Validating user input
 🧹 Improving exception handling
-📝 Adding proper logging
-🧩 Separating GUI, database, and business logic
+🧩 Separating GUI and database logic
 🔮 Future Improvements
-
-The project can be expanded with:
-
-📚 Library
-Add/remove books
-Manage authors
-Track available copies
-Track borrowed books
-Track overdue books
-Automatic return-date calculation
-👤 Members
-Member registration
-Member profiles
-Borrowing history
-Active loans
-Fine calculation
+📚 Book management
+👤 Member management
+📖 Book availability tracking
+⏰ Overdue book tracking
+💰 Fine calculation
+🔐 Login system
+📊 Library statistics
 🧠 What This Project Demonstrates
-
-This project demonstrates how a Java desktop application communicates with a relational database:
-
 User Input
     ↓
-Java Swing Interface
+Java Swing
     ↓
 Event Listener
     ↓
@@ -190,17 +160,15 @@ JDBC
     ↓
 SQL Query
     ↓
-MySQL Database
+MySQL
     ↓
-Result / Confirmation
-
+Result
 
 Java → Swing → JDBC → SQL → MySQL
 
 👨‍💻 Author
-
 Anirudh Singh
 
 GitHub: @AnirudhSingh1245
 
-⭐ If you found this project useful, consider giving it a star!
+⭐ If you like this project, consider giving it a star!
